@@ -1,0 +1,90 @@
+body{
+    background-image: url(/images/back1.jpg);
+}
+.formcontainer{
+    background-color: rgba(196, 146, 80, 0.452);
+    box-shadow: rgb(12, 12, 12);
+    height: 450px;
+    margin-top: 100px; 
+    padding: 10px;   
+}
+.notecontainer{
+    box-shadow: rgb(12, 12, 12);
+    height: 450px;
+    margin-top: 20px; 
+    margin-left: 0px;
+    padding: 20px;   
+}
+.titlefield{
+    width: 250px;
+    border:none;
+    border-bottom: rgba(94, 97, 97, 0.582) solid 1px;
+    margin: 15px;
+}
+::placeholder{
+   color: rgba(94, 97, 97, 0.342);
+}
+.datefield{
+    width: 137px;
+    
+}
+.textfield{
+    width: 350px;
+    height: 300px;
+    
+}
+.form{
+    margin: 20px;
+}
+.formlabel{
+    color: rgb(237, 245, 245);
+    font-size: medium;
+}
+.savebtn{
+    background-color: rgb(236, 230, 225);
+    color: rgb(9, 148, 39);
+    border-radius: 10px;
+    border-style: none;
+    float: right;
+    font-size: large;
+    font-weight: normal;
+}
+
+.required{
+    
+}
+.note{overflow: hidden;
+    height: 70px;
+    word-wrap: break-word;
+    background-color: rgba(92, 54, 5, 0.644);
+    border-radius: 5px;
+    margin: 5px;
+    margin-left: 15px;
+    padding: 5px;
+    color: rgb(217, 243, 243);
+}
+.btn{
+    float: right;
+}
+.head1{
+    color: aqua;
+    margin-left: 20px;
+}
+.head2{
+    color: rgb(82, 46, 5);
+    margin-left: 10px;
+}
+.updatebtn{
+    background-color: rgb(63, 36, 218);
+    border-radius: 5px;
+    color: #ffff;
+    border-style: none;
+    margin: 2px;
+}
+.deletebtn{
+    background-color: rgb(235, 15, 15);
+    border-radius: 5px;
+    color: #ffff;
+    border-style: none;
+    margin: 2px;
+}
