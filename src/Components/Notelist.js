@@ -1,10 +1,14 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { connect } from 'react-redux'
+import { getAllNotes } from '../Actions/noteActions';
 import Notes from './Notes'
 
 
+
 function Notelist(props) {
-    console.log('notes',props.notes)
+    useEffect(()=>{
+        props.getAllNotes();
+    },[]);
     return (
         <div>
             {props.notes.map((note) => (<Notes note={note} /> ))}
@@ -18,4 +22,8 @@ function mapStateToProps(state){
          notes: state.notes,
     }
 }
-export default connect(mapStateToProps,{})(Notelist);
+const mapDispatchToProps = {
+    getAllNotes,
+  };
+
+export default connect(mapStateToProps,mapDispatchToProps)(Notelist);
