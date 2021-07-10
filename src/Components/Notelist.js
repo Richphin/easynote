@@ -19,7 +19,7 @@ function Notelist(props) {
 
 function mapStateToProps(state){
     return{
-         notes: state.notes,
+         notes: state.userState.notes,
     }
 }
 const mapDispatchToProps = {
