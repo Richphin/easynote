@@ -23,3 +23,16 @@ export function login(email , password) {
         }
     }
 }
+
+export function logout() {
+    return async(dispatch, state ,{getFirebase})=>{
+        const firebase =getFirebase();
+        try {
+            
+            await firebase.auth().signOut();
+            
+        } catch (error) {
+            console.log(error)
+        }
+    }
+}
